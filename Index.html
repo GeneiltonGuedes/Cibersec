@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geneilton Guedes | Cybersecurity Professional</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        cyber: {
+                            500: '#00ff9d',
+                            600: '#00e68a',
+                        },
+                        dark: {
+                            900: '#0a0a0a',
+                            800: '#1a1a1a',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-dark-900 text-gray-100 font-mono">
+    <cyber-navbar></cyber-navbar>
+    
+    <!-- Hero Section -->
+    <section class="relative h-screen flex items-center justify-center overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-b from-black to-transparent z-10"></div>
+        <div class="absolute inset-0 bg-[url('http://static.photos/technology/1200x630/42')] bg-cover bg-center opacity-30"></div>
+        
+        <div class="container mx-auto px-6 z-20 text-center">
+            <h1 class="text-5xl md:text-7xl font-bold mb-4 text-cyber-500 glitch" data-text="Geneilton Guedes">Geneilton Guedes</h1>
+            <h2 class="text-xl md:text-3xl mb-8 typing-effect">Analista SOC Certificado | Especialista em Infraestrutura</h2>
+            <a href="#about" class="inline-block px-8 py-3 bg-cyber-500 text-dark-900 font-bold rounded hover:bg-cyber-600 transition-all border-2 border-cyber-500 hover:border-cyber-600">
+                Explore My Journey
+            </a>
+        </div>
+        
+        <div class="absolute bottom-10 left-0 right-0 text-center z-20 animate-bounce">
+            <i data-feather="chevron-down" class="text-cyber-500 w-8 h-8"></i>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-dark-800">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/3 mb-10 md:mb-0">
+                    <div class="relative">
+                        <div class="w-64 h-64 mx-auto bg-cyber-500 rounded-full opacity-20 blur-xl"></div>
+                        <img src="http://static.photos/people/640x360/23" alt="Profile" class="w-64 h-64 rounded-full absolute top-0 left-1/2 transform -translate-x-1/2 object-cover border-4 border-cyber-500">
+                    </div>
+                </div>
+                <div class="md:w-2/3 md:pl-12">
+                    <h2 class="text-3xl font-bold mb-6 text-cyber-500">About Me</h2>
+                    <div class="bg-dark-900 p-8 rounded-lg border-l-4 border-cyber-500">
+                        <p class="mb-4">IT professional transitioning to Cybersecurity with SOC Analyst certification and extensive infrastructure experience.</p>
+                        <p class="mb-4">Passionate about security monitoring, incident response, and implementing CIS controls. Strong foundation in networking and systems administration provides unique perspective on security challenges.</p>
+                        <p>Currently enhancing skills in ethical hacking and cloud security while working on hands-on labs to demonstrate practical security knowledge.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="py-20 bg-dark-900">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold mb-12 text-center text-cyber-500">Professional Experience</h2>
+            
+            <div class="timeline relative max-w-3xl mx-auto">
+                <!-- Timeline Item 1 -->
+                <div class="timeline-item mb-12 relative pl-16">
+                    <div class="timeline-dot absolute left-0 top-0 w-8 h-8 rounded-full bg-cyber-500 flex items-center justify-center">
+                        <i data-feather="server" class="w-4 h-4 text-dark-900"></i>
+                    </div>
+                    <div class="bg-dark-800 p-6 rounded-lg border-t-4 border-cyber-500">
+                        <h3 class="text-xl font-bold mb-2">Technical Support Analyst</h3>
+                        <div class="text-cyber-500 mb-2">FG Services | 2021 - Present</div>
+                        <ul class="list-disc pl-5 space-y-2">
+                            <li>Managed IT infrastructure for multiple clients</li>
+                            <li>Implemented network security measures</li>
+                            <li>Performed system monitoring and troubleshooting</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Timeline Item 2 -->
+                <div class="timeline-item mb-12 relative pl-16">
+                    <div class="timeline-dot absolute left-0 top-0 w-8 h-8 rounded-full bg-cyber-500 flex items-center justify-center">
+                        <i data-feather="hard-drive" class="w-4 h-4 text-dark-900"></i>
+                    </div>
+                    <div class="bg-dark-800 p-6 rounded-lg border-t-4 border-cyber-500">
+                        <h3 class="text-xl font-bold mb-2">Network Technician</h3>
+                        <div class="text-cyber-500 mb-2">CentralFone | 2019 - 2021</div>
+                        <ul class="list-disc pl-5 space-y-2">
+                            <li>Installed and maintained network infrastructure</li>
+                            <li>Configured VLANs and firewall rules</li>
+                            <li>Performed structured cabling installations</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-20 bg-dark-800">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold mb-12 text-center text-cyber-500">Technical Skills</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Security Card -->
+                <div class="skill-card group">
+                    <div class="skill-icon bg-cyber-500 text-dark-900">
+                        <i data-feather="shield"></i>
+                    </div>
+                    <h3 class="skill-title">Security</h3>
+                    <ul class="skill-items">
+                        <li>SIEM (Wazuh)</li>
+                        <li>Incident Response</li>
+                        <li>CIS Controls</li>
+                        <li>Ethical Hacking</li>
+                    </ul>
+                </div>
+                
+                <!-- Infrastructure Card -->
+                <div class="skill-card group">
+                    <div class="skill-icon bg-cyber-500 text-dark-900">
+                        <i data-feather="cpu"></i>
+                    </div>
+                    <h3 class="skill-title">Infrastructure</h3>
+                    <ul class="skill-items">
+                        <li>TCP/IP Networking</li>
+                        <li>VLAN Configuration</li>
+                        <li>Firewall Management</li>
+                        <li>Azure Fundamentals</li>
+                    </ul>
+                </div>
+                
+                <!-- Tools Card -->
+                <div class="skill-card group">
+                    <div class="skill-icon bg-cyber-500 text-dark-900">
+                        <i data-feather="tool"></i>
+                    </div>
+                    <h3 class="skill-title">Tools</h3>
+                    <ul class="skill-items">
+                        <li>Wireshark</li>
+                        <li>Nmap</li>
+                        <li>Kali Linux</li>
+                        <li>VirtualBox</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="py-20 bg-dark-900">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold mb-12 text-center text-cyber-500">Certifications</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- SOC Analyst -->
+                <div class="cert-card bg-dark-800 p-6 rounded-lg border-b-4 border-cyber-500 transform hover:scale-105 transition-all">
+                    <div class="w-20 h-20 bg-cyber-500 rounded-full flex items-center justify-center mb-4 mx-auto">
+                        <i data-feather="eye" class="w-8 h-8 text-dark-900"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 text-center">SOC Analyst</h3>
+                    <p class="text-center text-cyber-500 mb-4">IBSEC</p>
+                    <p class="text-center">Certified in security monitoring, log analysis, and incident response procedures.</p>
+                </div>
+                
+                <!-- Fortinet NSE -->
+                <div class="cert-card bg-dark-800 p-6 rounded-lg border-b-4 border-cyber-500 transform hover:scale-105 transition-all">
+                    <div class="w-20 h-20 bg-cyber-500 rounded-full flex items-center justify-center mb-4 mx-auto">
+                        <i data-feather="lock" class="w-8 h-8 text-dark-900"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 text-center">Fortinet NSE 1 & 2</h3>
+                    <p class="text-center text-cyber-500 mb-4">Fortinet</p>
+                    <p class="text-center">Network Security Associate certification covering security concepts and Fortinet products.</p>
+                </div>
+                
+                <!-- Azure Fundamentals -->
+                <div class="cert-card bg-dark-800 p-6 rounded-lg border-b-4 border-cyber-500 transform hover:scale-105 transition-all">
+                    <div class="w-20 h-20 bg-cyber-500 rounded-full flex items-center justify-center mb-4 mx-auto">
+                        <i data-feather="cloud" class="w-8 h-8 text-dark-900"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 text-center">Azure Fundamentals</h3>
+                    <p class="text-center text-cyber-500 mb-4">Microsoft</p>
+                    <p class="text-center">AZ-900 certification demonstrating cloud concepts and Azure services knowledge.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 bg-dark-800">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold mb-12 text-center text-cyber-500">Projects & Labs</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- SIEM Implementation -->
+                <div class="project-card group">
+                    <div class="project-image">
+                        <img src="http://static.photos/technology/640x360/15" alt="SIEM Project" class="w-full h-48 object-cover">
+                        <div class="project-overlay"></div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">SIEM Implementation & Analysis</h3>
+                        <p class="project-desc">Deployed Wazuh SIEM for log monitoring and security event correlation.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Wazuh</span>
+                            <span class="tech-tag">ELK Stack</span>
+                            <span class="tech-tag">Linux</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Network Security -->
+                <div class="project-card group">
+                    <div class="project-image">
+                        <img src="http://static.photos/technology/640x360/22" alt="Network Security" class="w-full h-48 object-cover">
+                        <div class="project-overlay"></div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Network Security Lab</h3>
+                        <p class="project-desc">Configured VLANs, firewall rules, and VPNs in a virtual lab environment.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">pfSense</span>
+                            <span class="tech-tag">VLAN</span>
+                            <span class="tech-tag">OpenVPN</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-dark-900">
+        <div class="container mx-auto px-6 max-w-4xl">
+            <h2 class="text-3xl font-bold mb-12 text-center text-cyber-500">Let's Connect</h2>
+            
+            <div class="bg-dark-800 p-8 rounded-lg border-t-4 border-cyber-500">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div>
+                        <h3 class="text-xl font-bold mb-4">Contact Information</h3>
+                        <div class="space-y-4">
+                            <div class="flex items-center">
+                                <div class="w-10 h-10 rounded-full bg-cyber-500 flex items-center justify-center mr-4">
+                                    <i data-feather="mail" class="w-5 h-5 text-dark-900"></i>
+                                </div>
+                                <span>geneilton@example.com</span>
+                            </div>
+                            <div class="flex items-center">
+                                <div class="w-10 h-10 rounded-full bg-cyber-500 flex items-center justify-center mr-4">
+                                    <i data-feather="phone" class="w-5 h-5 text-dark-900"></i>
+                                </div>
+                                <span>+55 81 99999-9999</span>
+                            </div>
+                            <div class="flex items-center">
+                                <div class="w-10 h-10 rounded-full bg-cyber-500 flex items-center justify-center mr-4">
+                                    <i data-feather="linkedin" class="w-5 h-5 text-dark-900"></i>
+                                </div>
+                                <span>linkedin.com/in/geneilton</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <h3 class="text-xl font-bold mb-4">Languages</h3>
+                        <div class="space-y-3">
+                            <div>
+                                <div class="flex justify-between mb-1">
+                                    <span>Portuguese</span>
+                                    <span>Native</span>
+                                </div>
+                                <div class="w-full bg-dark-700 rounded-full h-2">
+                                    <div class="bg-cyber-500 h-2 rounded-full" style="width: 100%"></div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="flex justify-between mb-1">
+                                    <span>English</span>
+                                    <span>Technical Intermediate</span>
+                                </div>
+                                <div class="w-full bg-dark-700 rounded-full h-2">
+                                    <div class="bg-cyber-500 h-2 rounded-full" style="width: 60%"></div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="flex justify-between mb-1">
+                                    <span>Spanish</span>
+                                    <span>Basic</span>
+                                </div>
+                                <div class="w-full bg-dark-700 rounded-full h-2">
+                                    <div class="bg-cyber-500 h-2 rounded-full" style="width: 30%"></div>
+                                </div>
+                            </div>
+</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <cyber-footer></cyber-footer>
+
+    <script src="components/navbar.js"></script>
+    <script src="components/footer.js"></script>
+    <script src="script.js"></script>
+    <script>
+        feather.replace();
+    </script>
+<script src="https://huggingface.co/deepsite/deepsite-badge.js"></script>
+</body>
+</html>
