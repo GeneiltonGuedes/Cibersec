@@ -8,6 +8,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
     <script src="https://unpkg.com/feather-icons"></script>
+    <link rel="shortcut icon" href="IMG/favicon.ico" type="image/x-icon">
     <script>
     tailwind.config = {
         theme: {
@@ -35,7 +36,7 @@
     <section class="relative h-screen flex items-center justify-center overflow-hidden">
         <div class="absolute inset-0 bg-gradient-to-b from-black to-transparent z-10"></div>
 
-        <div class="absolute inset-0 bg-[url('./IMG/Escudo.jpg')] bg-cover bg-center opacity-30"></div>
+        <div class="absolute inset-0 bg-[url('./IMG/Escudo1.jpg')] bg-cover bg-center opacity-30"></div>
 
         <div class="container mx-auto px-6 z-20 text-center">
             <h1 class="text-5xl md:text-7xl font-bold mb-4 text-cyber-500 glitch" data-text="Geneilton Guedes">
@@ -43,12 +44,19 @@
             </h1>
 
             <h2 class="text-xl md:text-3xl mb-8 typing-effect">
-                Analista SOC Certificado | Especialista em Infraestrutura
+                Estudante de TI | Cibersegurança
             </h2>
 
-            <a href="#about" class="inline-block px-8 py-3 bg-cyber-500 text-dark-900 font-bold rounded hover:bg-cyber-600 transition-all border-2 border-cyber-500 hover:border-cyber-600">
-                Explore Minha Jornada
-            </a>
+            <div class="mt-4">
+    <a href="doc/Curriculo_Geneilton_Guedes_Cibersec_Compacto.pdf"
+       target="_blank" 
+       rel="noopener noreferrer"
+       class="inline-flex items-center gap-2 px-6 py-3 bg-cyber-500 text-dark-900 font-bold rounded-lg border-2 border-cyber-500 hover:bg-cyber-600 hover:border-cyber-600 transition-all">
+        <i data-feather="download" class="w-5 h-5"></i>
+        Baixar Currículo
+    </a>
+</div>
+
         </div>
 
     </section>
@@ -66,9 +74,9 @@
                 <div class="md:w-2/3 md:pl-12">
                     <h2 class="text-3xl font-bold mb-6 text-cyber-500">Sobre Mim</h2>
                     <div class="bg-dark-900 p-8 rounded-lg border-l-4 border-cyber-500">
-                        <p class="mb-4">Profissional de TI em transição para Cibersegurança, com certificação de Analista SOC e ampla experiência em infraestrutura.</p>
-                        <p class="mb-4">Apaixonado por monitoramento de segurança, resposta a incidentes e implementação de controles CIS. Base sólida em redes e administração de sistemas, proporcionando uma visão diferenciada sobre desafios de segurança.</p>
-                        <p>Atualmente aprimorando habilidades em ethical hacking e segurança em nuvem, desenvolvendo projetos e laboratórios práticos para demonstrar experiência real.</p>
+                        <p class="mb-4">Sou um profissional de tecnologia com foco direcionado para a Cibersegurança, atualmente em transição de carreira para a área de Segurança da Informação. Minha base sólida foi construída através da experiência prática em infraestrutura e suporte técnico , e estou complementando minha formação acadêmica cursando Análise e Desenvolvimento de Sistemas.</p>
+                        <p class="mb-4">Minha trajetória profissional inclui a atuação na FG Services, onde presto suporte técnico, administro a rede e garanto a manutenção do ambiente de TI. Além disso, trabalhei como freelancer em projetos de infraestrutura, realizando montagem de racks, cabeamento estruturado e configuração de redes. Essas experiências me deram habilidades práticas em diagnóstico, resolução de incidentes e infraestrutura de rede.</p>
+                        <p>Estou comprometido com o aprendizado contínuo , trazendo competências como proatividade, organização e comunicação clara para o ambiente de trabalho. Tenho habilidades técnicas em Segurança da Informação, incluindo análise de logs e resposta a incidentes , e profundo conhecimento em infraestrutura e redes. Estou sempre pronto para trabalhar em equipe  e aplicar as melhores práticas de segurança na resolução de novos desafios.</p>
                     </div>
                 </div>
             </div>
@@ -129,7 +137,7 @@
                     </div>
                     <h3 class="skill-title">Segurança</h3>
                     <ul class="skill-items">
-                        <li>SIEM (Wazuh)</li>
+                        <li>SIEM</li>
                         <li>Resposta a Incidentes</li>
                         <li>Controles CIS</li>
                         <li>Ethical Hacking</li>
@@ -155,7 +163,7 @@
                     </div>
                     <h3 class="skill-title">Ferramentas</h3>
                     <ul class="skill-items">
-                        <li>Wireshark</li>
+                        <li>Splunk</li>
                         <li>Nmap</li>
                         <li>Kali Linux</li>
                         <li>VirtualBox</li>
@@ -169,7 +177,7 @@
     <!-- Certifications Section -->
     <section id="certifications" class="py-20 bg-dark-900">
         <div class="container mx-auto px-6">
-            <h2 class="text-3xl font-bold mb-12 text-center text-cyber-500">Certificações</h2>
+            <h2 class="text-3xl font-bold mb-12 text-center text-cyber-500">Certificações e cursos</h2>
             
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                 
@@ -193,11 +201,38 @@
 
                 <div class="cert-card bg-dark-800 p-6 rounded-lg border-b-4 border-cyber-500 transform hover:scale-105 transition-all">
                     <div class="w-20 h-20 bg-cyber-500 rounded-full flex items-center justify-center mb-4 mx-auto">
+                        <i data-feather="lock" class="w-8 h-8 text-dark-900"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 text-center">Introduction to Cybersecurity </h3>
+                    <p class="text-center text-cyber-500 mb-4">Cisco</p>
+                    <p class="text-center">Curso sobre os conceitos básicos de segurança.</p>
+                </div>
+
+                <div class="cert-card bg-dark-800 p-6 rounded-lg border-b-4 border-cyber-500 transform hover:scale-105 transition-all">
+                    <div class="w-20 h-20 bg-cyber-500 rounded-full flex items-center justify-center mb-4 mx-auto">
+                        <i data-feather="terminal" class="w-8 h-8 text-dark-900"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 text-center">Ethical Hacking</h3>
+                    <p class="text-center text-cyber-500 mb-4">Udemy</p>
+                    <p class="text-center">Curso de introdução ao hacking ético e técnicas ofensivas de segurança.</p>
+                </div>
+
+                <div class="cert-card bg-dark-800 p-6 rounded-lg border-b-4 border-cyber-500 transform hover:scale-105 transition-all">
+                    <div class="w-20 h-20 bg-cyber-500 rounded-full flex items-center justify-center mb-4 mx-auto">
+                        <i data-feather="cloud" class="w-8 h-8 text-dark-900"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 text-center">Cloud Computing: Essencial </h3>
+                    <p class="text-center text-cyber-500 mb-4">Udemy</p>
+                    <p class="text-center">Curso de essencial de cloud AWS, Azure, Alibaba e Google cloud</p>
+                </div>
+                
+                 <div class="cert-card bg-dark-800 p-6 rounded-lg border-b-4 border-cyber-500 transform hover:scale-105 transition-all">
+                    <div class="w-20 h-20 bg-cyber-500 rounded-full flex items-center justify-center mb-4 mx-auto">
                         <i data-feather="cloud" class="w-8 h-8 text-dark-900"></i>
                     </div>
                     <h3 class="text-xl font-bold mb-2 text-center">Azure Fundamentals</h3>
                     <p class="text-center text-cyber-500 mb-4">Microsoft</p>
-                    <p class="text-center">Certificação AZ-900 sobre conceitos de nuvem e serviços Azure.</p>
+                    <p class="text-center">Curso de AZ-900 sobre conceitos de nuvem e serviços Azure.</p>
                 </div>
 
             </div>
@@ -213,32 +248,52 @@
                 
                 <div class="project-card group">
                     <div class="project-image">
-                        <img src="http://static.photos/technology/640x360/15" alt="Projeto SIEM" class="w-full h-48 object-cover">
+                        <img src="IMG/Lab_SOC1.jpeg" alt="Projeto SIEM" class="w-full h-48 object-cover">
                         <div class="project-overlay"></div>
                     </div>
                     <div class="project-content">
-                        <h3 class="project-title">Implementação e Análise de SIEM</h3>
-                        <p class="project-desc">Implantação do SIEM Wazuh para monitoramento de logs e correlação de eventos.</p>
+                        <h3 class="project-title">Laboratório de Resposta a Incidentes (SOC)</h3>
+                        <p class="project-desc">Laboratório prático envolvendo triagem, priorização e investigação de incidentes em uma fila realista de alertas. <br>
+                            Atividades Realizadas: <br>
+
+                🔍 Identificação de acesso a link malicioso por engenharia social. <br>
+
+                🛡 Validação em ferramenta de análise para confirmação de URL maliciosa. <br>
+
+                📡 Verificação em logs confirmando bloqueio de conexão pelo firewall. <br>
+
+                ✔ Classificação do incidente como True Positive e encerramento correto.
+                        </p>
                         <div class="project-tech">
-                            <span class="tech-tag">Wazuh</span>
-                            <span class="tech-tag">ELK Stack</span>
-                            <span class="tech-tag">Linux</span>
+                            <span class="tech-tag">Phishing</span>
+                            <span class="tech-tag">Investigação</span>
+                            <span class="tech-tag">Análise de Alertas</span>
                         </div>
                     </div>
                 </div>
                 
                 <div class="project-card group">
                     <div class="project-image">
-                        <img src="http://static.photos/technology/640x360/22" alt="Segurança de Rede" class="w-full h-48 object-cover">
+                        <img src="IMG/Palestra.jpg" alt="Segurança de Rede" class="w-full h-48 object-cover">
                         <div class="project-overlay"></div>
                     </div>
                     <div class="project-content">
-                        <h3 class="project-title">Laboratório de Segurança de Rede</h3>
-                        <p class="project-desc">Configuração de VLANs, regras de firewall e VPNs em um ambiente virtualizado.</p>
+                        <h3 class="project-title">Palestra: Boas Práticas de Segurança Digital</h3>
+                        <p class="project-desc">Sessão ministrada para colaboradores sobre criação de senhas fortes, uso seguro de autenticação e postura digital. <br>
+                            Conteúdos Abordados: <br>
+
+🔐 Gestão de Credenciais: criação de senhas robustas e uso de gerenciadores. <br>
+
+🔑 Autenticação Multifator: reforço da camada adicional de segurança. <br>
+
+🕵️‍♂️ Privacidade e Engenharia Social: exposição de riscos e vetores de ataques. <br>
+
+🌐 Segurança em Ambientes Públicos: conexões Wi-Fi, VPNs e boas práticas.<br>
+                        </p>
                         <div class="project-tech">
-                            <span class="tech-tag">pfSense</span>
-                            <span class="tech-tag">VLAN</span>
-                            <span class="tech-tag">OpenVPN</span>
+                            <span class="tech-tag">Awareness</span>
+                            <span class="tech-tag">Segurança da Informação</span>
+                            <span class="tech-tag">Educação Corporativa</span>
                         </div>
                     </div>
                 </div>
@@ -262,20 +317,21 @@
                                 <div class="w-10 h-10 rounded-full bg-cyber-500 flex items-center justify-center mr-4">
                                     <i data-feather="mail" class="w-5 h-5 text-dark-900"></i>
                                 </div>
-                                <span>geneilton@example.com</span>
+                                <span>geneiltonguedes4@gmail.com</span>
                             </div>
                             <div class="flex items-center">
                                 <div class="w-10 h-10 rounded-full bg-cyber-500 flex items-center justify-center mr-4">
                                     <i data-feather="phone" class="w-5 h-5 text-dark-900"></i>
                                 </div>
-                                <span>+55 81 99999-9999</span>
+                                <span>+55 81 98986-6613</span>
                             </div>
                             <div class="flex items-center">
                                 <div class="w-10 h-10 rounded-full bg-cyber-500 flex items-center justify-center mr-4">
                                     <i data-feather="linkedin" class="w-5 h-5 text-dark-900"></i>
                                 </div>
-                                <span>linkedin.com/in/geneilton</span>
+                                <span>www.linkedin.com/in/geneiltonguedes</span>
                             </div>
+
                         </div>
                     </div>
 
@@ -299,7 +355,7 @@
                                     <span>Intermediário Técnico</span>
                                 </div>
                                 <div class="w-full bg-dark-700 rounded-full h-2">
-                                    <div class="bg-cyber-500 h-2 rounded-full" style="width: 60%"></div>
+                                    <div class="bg-cyber-500 h-2 rounded-full" style="width: 50%"></div>
                                 </div>
                             </div>
 
